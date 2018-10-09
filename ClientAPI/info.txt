@@ -1,0 +1,36 @@
+Ok, let me introduce my code.
+
+It`s test simple REST API Client for two process: get all producers and create new producer.
+
+Client have two level.
+
+ Basic level, where We have:
+  - main objects(abstract classes),
+  - commands(interfaces for basic elements),
+  - operations(basic classes, what We can build more in future).
+
+ Working level, whe We can build a lot requests for Producers and other API elements.
+
+
+For main elements in ClientAPI, I use object Creds (abstract class Creds.php), when We can add static information
+    or very interesting elements for TURN-OFF sending requests
+    or We can check on PROD ENVIRONMENT(for example) and We must to call request methods with providing not testing login and password
+
+I use autoloading of composer.
+
+
+
+For testing my code I add file "php.php".
+Please change test-producer info in file "Creds.php" in variable "TEST_PRODUCER"
+and active the command in command line
+
+$ php php.php
+
+and You will take information about all producer and create new producer( like as write in "Creds.php")
+
+
+in future must to write validation processing, DB models and more else things for this API Client...
+
+Thank You for You spending time! And have a nice day!
+
+vsbezgin@gmail.com
